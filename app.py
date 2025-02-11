@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
-import pickle
-import torch
+# import pickle
+# import torch
 import numpy as np
 
 def main():
