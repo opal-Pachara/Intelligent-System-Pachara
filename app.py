@@ -71,7 +71,7 @@ def main():
         }
         </style>
     """, unsafe_allow_html=True)
-    st.logo("img\logo.png",size="large")
+    st.logo("img/logo.png",size="large")
     st.sidebar.title("Intelligent System Project")
     st.sidebar.caption("Phatchara Worrawat 6404062610324")
     st.sidebar.title("Menu")
@@ -121,7 +121,7 @@ def show_introduction():
                     และ Deep Learning เป็น 
                     subset ของ Machine Learning อีกด้วย
     </p>""", unsafe_allow_html=True)
-        st.image("img\ML-DL-AI.jpg",caption="How Difference of AI ML And DL")
+        st.image("img/ML-DL-AI.jpg",caption="How Difference of AI ML And DL")
 
     with tab3: 
         st.markdown("""<h4 style='font-family: Athiti; text-align: left;text-indent: 2.5em;'>
@@ -139,7 +139,7 @@ def show_introduction():
                 มีข้อมูล(Data) เป็นจำนวนมากให้กับ ตัว AI เพื่อให้มันเรียนรู้จากข้อมูลที่เรานำไปสอนมัน 
                 แล้วให้ตัว AI ค่อย ๆ ทำความเข้าใจจนสุดท้ายมันก็จะสร้าง Model ออกมานั้นเอง ยิ่งเรามี Data ให้มันเรียนรู้มากพอและหลากหลายจะทำให้ตัว AI ของเราก็จะยิ่งแม่นยำมากยิ่งขึ้นนั้นเอง
     </p>""", unsafe_allow_html=True)
-        st.image("img\Blog_Selecting-the-Right-AI-Training-Data-is-Important.jpg",caption="How Intelligent of Artificial Intelligence")
+        st.image("img/Blog_Selecting-the-Right-AI-Training-Data-is-Important.jpg",caption="How Intelligent of Artificial Intelligence")
         
     with tab4:
         st.markdown("""<h4 style='font-family: Athiti; text-align: center;text-indent: 2.5em;'>
@@ -186,7 +186,7 @@ def show_introduction():
                     ไม่แน่นอน ตัวอย่างการใช้ Reinforcement Learning คือการฝึกโมเดลให้เล่นเกม โดยโมเดลจะได้รับ
                     คะแนนเป็นผลตอบแทนเมื่อทําได้ดี และจะได้รับบทลงโทษเมื่อทําผิด
     </p>""", unsafe_allow_html=True)
-        st.image("img\ML-Type.png",caption="How Difference of Type Learning")
+        st.image("img/ML-Type.png",caption="How Difference of Type Learning")
     
     with tab6:
         st.markdown("""<h4 style='font-family: Athiti; text-align: center;text-indent: 2.5em;'>
