@@ -1,0 +1,5 @@
+[theme]
+primaryColor = "#6C5B7B"  # สีหลัก (ม่วง)
+backgroundColor = "#F8EDEB"  # สีพื้นหลังหลัก (ชมพูอ่อน)
+secondaryBackgroundColor = "#F3D9DC"  # สีพื้นหลังรอง (ชมพูเข้มขึ้น)
+textColor = "#333333"  # สีตัวอักษร
