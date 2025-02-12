@@ -90,9 +90,9 @@ def main():
     elif page == "Algorithm & Model Development":
         show_model_development()
     elif page == "Machine Learing Model":
-        show_ml_demo()
+        show_ml()
     elif page == "Neural Network Model":
-        show_nn_demo()
+        show_nn()
 
 def show_introduction():
     st.markdown("""<h1 style='font-family: Athiti; text-align: center;'>Introduction & Data Set</h1>""", unsafe_allow_html=True)
@@ -330,6 +330,12 @@ def show_model_development():
     - ใช้โครงข่ายประสาทเทียม เช่น CNN, RNN, Transformer
     - การปรับแต่งโครงสร้างโมเดลและ Learning Rate
     """)
+
+def show_ml():
+    st.title("Machine Learning")
+
+def show_nn():
+    st.title("Neural Network")
 
 if __name__ == "__main__":
     main()
