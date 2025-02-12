@@ -3,24 +3,22 @@ from PIL import Image
 # import pickle
 # import torch
 import numpy as np
+import base64
 
 def main():
     st.markdown("""
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&display=swap');
-
-        /* กำหนดฟอนต์ Athiti ให้กับทุกองค์ประกอบ */
+                
         html, body, [class*="css"]  {
             font-family: 'Athiti', sans-serif;
         }
         .stSidebar, .stRadio, .stButton>button, .stMarkdown, .stTextInput, .stNumberInput  {
             font-family: 'Athiti', sans-serif !important;
         }
-
-        /* ธีมอัตโนมัติตามระบบของผู้ใช้ */
         @media (prefers-color-scheme: dark) {
             .stApp {
-                background: #121212; /* พื้นหลังดำ */
+                background: #121212; 
                 color: white;
             }
             h1, h2, h3, h4 {
@@ -90,7 +88,7 @@ def show_introduction():
     st.markdown("""<h1 style='font-family: Athiti; text-align: center;'>Introduction & Data Set</h1>""", unsafe_allow_html=True)
     tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
     "Introduction",
-    "AI vs ML vs DL",
+    "What is AI ML DL",
     "Why Data Prepare for Training",
     "Data Set Sources",
     "Machine Learning",
@@ -214,6 +212,13 @@ def show_introduction():
                 ปรับปรุงน้ําหนัก (Weights) และอคติ(Bias) โดยการคํานวณค่าความผิดพลาด (Error) ระหว่างผลลัพธ์ที่
                 ทํานายและค่าจริง แล้วทําการปรับน้ําหนัก (Weights) และอคติ(Bias) เพื่อลดค่าความผิดพลาด " (Neurons)</span>
     </p>""", unsafe_allow_html=True)
+        file_ = open("img/visuNN.gif", "rb")
+        contents = file_.read()
+        data_url = base64.b64encode(contents).decode("utf-8")
+        file_.close()
+
+        st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
+            unsafe_allow_html=True,)
 
 def show_model_development():
     st.title("Model Development")
