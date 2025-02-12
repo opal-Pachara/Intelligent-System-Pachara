@@ -131,21 +131,41 @@ def show_introduction():
                     - Algorithm & Model Development – อธิบายแนวทางการพัฒนาโมเดล Machine Learning และ Neural Network<br>
                     - Machine Learing Model – สาธิตการทำงานของโมเดล Machine Learning<br> 
                     - Neural Network Model – สาธิตการทำงานของโมเดล Neural Network<br>
+                    <br>
     </p>""", unsafe_allow_html=True)
-
-        st.markdown("""<h5 style='font-family: Athiti; text-indent: 2.5em;'>
-    About Us
-    </h5>""", unsafe_allow_html=True)
+        
         st.markdown("""
-                    <p style='font-family: Athiti; text-align: justify;'>
-                    <b>จัดทำโดย:</b><br>
-                    - นายพชร วรวัตร <br>
-                    - รหัสนักศึกษา 6404062610324 <br>
-                    - ห้อง DE-RA ชั้นปีที่ 4 <br>
-                    <b>อาจารย์ผู้สอน</b><br>
-                    - ดร.ณัฐกิตติ์ จิตรเอื้อตระกูล  (NJR) <br>
-                    - ดร.ธรรศฏภณ สุระศักดิ์  (TSR)  <br>
-    </p>""", unsafe_allow_html=True)
+    <style>
+        .about-container {
+            text-align: center;
+            font-family: 'Athiti', sans-serif;
+        }
+        .about-content {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            font-size: 16px;
+            text-align: left;
+        }
+    </style>
+    <div class="about-container">
+        <h5>About Us</h5>
+        <div class="about-content">
+            <div>
+                <b>จัดทำโดย</b><br>
+                นายพชร วรวัตร <br>
+                รหัสนักศึกษา 6404062610324 <br>
+                ห้อง DE-RA ชั้นปีที่ 4 <br>
+            </div>
+            <div>
+                <b>อาจารย์ผู้สอน</b><br>
+                ดร.ณัฐกิตติ์ จิตรเอื้อตระกูล (NJR) <br>
+                ดร.ธรรศฏภณ สุระศักดิ์ (TSR) <br>
+            </div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
 
     with tab2:
         st.markdown("""<h4 style='font-family: Athiti; text-align: center;text-indent: 2.5em;'>
