@@ -8,14 +8,25 @@ import base64
 def main():
     st.markdown("""
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@300&display=swap');
-                
-        html, body, [class*="css"]  {
-            font-family: 'Athiti', sans-serif;
-        }
-        .stSidebar, .stRadio, .stButton>button, .stMarkdown, .stTextInput, .stNumberInput  {
-            font-family: 'Athiti', sans-serif !important;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Athiti:wght@400&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Athiti', sans-serif;
+    font-size: 16px; /* ปรับขนาดให้เหมาะสม */
+    font-weight: 400; /* ใช้ Regular */
+    line-height: 1.6; /* เพิ่มระยะห่างระหว่างบรรทัด */
+    color: #ffffff; /* สีขาว */
+    background-color: #121212; /* พื้นหลังสีดำ (หรือเปลี่ยนตามต้องการ) */
+}
+
+.stSidebar, .stRadio, .stButton>button, .stMarkdown, 
+.stTextInput, .stNumberInput {
+    font-family: 'Athiti', sans-serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    color: #ffffff !important; /* ทำให้สีขาว */
+}
         @media (prefers-color-scheme: dark) {
             .stApp {
                 background: #121212; 
