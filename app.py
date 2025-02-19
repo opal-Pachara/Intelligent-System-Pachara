@@ -100,7 +100,7 @@ def show_introduction():
     "Introduction",
     "What is AI ML DL",
     "Why Data Prepare for Training",
-    "Data Set Sources",
+    "What is Data Set",
     "Machine Learning",
     "Neural Network"
 ])
@@ -229,12 +229,33 @@ def show_introduction():
         
     with tab4:
         st.markdown("""<h4 style='font-family: Athiti; text-align: center;text-indent: 2.5em;'>
-    Source of Data Set🔎
+    What is Data Set🔎
     </h4>""", unsafe_allow_html=True)
+        st.header("Data Set :blue[(ชุดข้อมูล)]")
+        st.markdown("""<p style='font-family: Athiti; text-align: justify;'>
+    &nbsp;&nbsp;&nbsp;Set หรือ ชุดข้อมูล คือ กลุ่มของข้อมูลที่ถูกเก็บรวบรวมไว้เพื่อใช้ในการวิเคราะห์ ประมวลผล 
+                หรือฝึกสอนโมเดลปัญญาประดิษฐ์ (AI) เช่น Machine Learning (ML) หรือ Deep Learning (DL)
+                ประเภทของ Data Set <br>
+    </p>""", unsafe_allow_html=True)
+        
+        st.header("Structured Data :red[(ข้อมูลที่มีโครงสร้าง)]")
+
+        st.markdown("""<p style='font-family: Athiti; text-align: justify;'>
+    &nbsp;&nbsp;&nbsp;ข้อมูลที่ถูกจัดเก็บในรูปแบบที่เป็นระเบียบ เช่น ตารางในฐานข้อมูล (Database), Excel, CSV
+                ตัวอย่าง: รายการสินค้าพร้อมราคาที่เก็บอยู่ใน Excel หรือ MySQL<br>
+    </p>""", unsafe_allow_html=True)
+        
+        st.header("Unstructured Data :green[(ข้อมูลที่ไม่มีโครงสร้าง)]")
         
         st.markdown("""<p style='font-family: Athiti; text-align: justify;'>
-    &nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;ข้อมูลที่ไม่มีรูปแบบแน่นอน เช่น ข้อความ รูปภาพ วิดีโอ เสียง
+                ตัวอย่าง: ข้อความรีวิวสินค้า, รูปภาพจากกล้องวงจรปิด
+                Semi-structured Data (ข้อมูลกึ่งมีโครงสร้าง)
+                ข้อมูลที่มีบางส่วนมีโครงสร้าง แต่ไม่เป็นระเบียบทั้งหมด เช่น JSON, XML, NoSQL
+                ตัวอย่าง: ข้อมูลจาก API ที่ส่งมาในรูปแบบ JSON<br><br>
     </p>""", unsafe_allow_html=True)
+        
+        st.image("img/datatype.png",caption="Type of Data Set")
         
     with tab5:
         st.markdown("""<h4 style='font-family: Athiti; text-align: center;text-indent: 2.5em;'>
@@ -304,19 +325,20 @@ def show_introduction():
                 ประเภทหรือลงทํานายผลลัพธ์ ค่าน้ําหนักที่สูงบ่งบอกว่าข้อมูลนั้นมีความสําคัญในกระบวนการคํานวณ
                 มากขึ้น
                 อคติ (Bias) ช่วยเพิ่มความยืดหยุ่นให้กับผลลัพธ์ของนิวรอน โดยทําหน้าที่เป็นค่าที่ถูกเพิ่มเข้ามาในการ
-                คํานวณ ทําให้โครงข่ายสามารถปรับตัวเข้ากับข้อมูลได้ดีขึ้น และช่วยสร้างผลลัพธ์ที่มีประสิทธิภาพ <br><br>
+                คํานวณ ทําให้โครงข่ายสามารถปรับตัวเข้ากับข้อมูลได้ดีขึ้น และช่วยสร้างผลลัพธ์ที่มีประสิทธิภาพ <br>
+                <br>
     &nbsp;&nbsp;&nbsp;แม้ใน กรณีที่ข้อมูลมีลักษณะเฉพาะหรือไม่เป็นเชิงเส้น
                 <span style="background-color: #990000;">"โดยการฝึกอบรมโครงข่ายประสาทเทียมมักใช้เทคนิคที่เรียกว่า การย้อนกลับ (Backpropagation) เพื่อ
                 ปรับปรุงน้ําหนัก (Weights) และอคติ(Bias) โดยการคํานวณค่าความผิดพลาด (Error) ระหว่างผลลัพธ์ที่
                 ทํานายและค่าจริง แล้วทําการปรับน้ําหนัก (Weights) และอคติ(Bias) เพื่อลดค่าความผิดพลาด " (Neurons)</span>
     </p>""", unsafe_allow_html=True)
+
         file_ = open("img/visuNN.gif", "rb")
         contents = file_.read()
         data_url = base64.b64encode(contents).decode("utf-8")
         file_.close()
 
-        st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',
-            unsafe_allow_html=True,)
+        st.markdown(f'<img src="data:image/gif;base64,{data_url}" alt="cat gif">',unsafe_allow_html=True,)
 
 def show_model_development():
     st.title("Model Development")
